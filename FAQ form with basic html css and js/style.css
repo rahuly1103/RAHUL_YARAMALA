@@ -1,0 +1,36 @@
+body{
+    background-color: pink;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px;
+}
+.container{
+    background-color: white;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgb(25, 23, 25);
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.answer{
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+.icon{
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
+
+.answer.active{
+    max-height: fit-content;
+}
+.icon.active{
+    transform: rotate(180deg);
+    max-height: 200px;
+}
